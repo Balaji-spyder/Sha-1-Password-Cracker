@@ -1,0 +1,8 @@
+salts=False, b305921a3723cd5d70a375cd21a61e60aabb84ec should return "sammy123"
+salts=True, 53d8b3dc9d39f0184144674e310185e41a87ffd5 should return "superman"
+salts=False, b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3 should return "letmein"
+salts=False, 5d70c3d101efd9cc0a69f4df2ddf33b21e641f6a should return "q1w2e3r4t5"
+salts=True, ea3f62d498e3b98557f9f9cd0d905028b3b019e1 should return "bubbles1"
+salts=True, 05bbf26a28148f531cf57872df546961d1ed0861 should return "01071988"
+
+
