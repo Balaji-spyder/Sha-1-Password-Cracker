@@ -1,1 +1,1 @@
-# SHA-1 Hash Cracker
+# SHA-1 Password Cracker
