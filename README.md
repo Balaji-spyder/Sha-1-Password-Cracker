@@ -64,8 +64,8 @@ You can try out the live version of the application here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Balaji-spyder/Balaji-spyder.github.io.git
-   cd Balaji-spyder.github.io
+   git clone https://github.com/Balaji-spyder/Sha-1-Password-Cracker.git
+   cd Sha-1-Password-Cracker
    ```
 2. Open the `index.html` file in your browser:
    ```bash
@@ -76,8 +76,8 @@ You can try out the live version of the application here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Balaji-spyder/Balaji-spyder.github.io.git
-   cd Balaji-spyder.github.io
+   git clone https://github.com/Balaji-spyder/Sha-1-Password-Cracker.git
+   cd Sha-1-Password-Cracker
    ```
 2. Install dependencies:
    ```bash
