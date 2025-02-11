@@ -22,7 +22,7 @@ function isValidSHA1(hash) {
 
             try {
                 // Send data to the backend
-                const response = await fetch('https://balaji-spyder-github-io.onrender.com/crack', {
+                const response = await fetch('https://balaji-spyder-github-io.onrender.com:5000/crack', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
