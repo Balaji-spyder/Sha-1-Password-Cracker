@@ -1,0 +1,95 @@
+ body {
+            background-color: #121212;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            background-color: #2a2a2a;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+        }
+
+        .btn-custom {
+            background-color: #00ff00;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #00cc00;
+        }
+
+        .loader {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            border: 0.25em solid #00ff00;
+            border-right-color: transparent;
+        }
+
+        .inline-dropdown {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .inline-dropdown label {
+            color: #00ff00;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .inline-dropdown select {
+            background-color: #2a2a2a;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+            width: auto;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00ff00;
+        }
+        /* Typing Effect Styling */
+        span.typing {
+            font-weight: bold;
+            white-space: nowrap; /* Prevent wrapping */
+            overflow: hidden; /* Hide overflow */
+            border-right: 2px solid #00ff00; /* Cursor effect */
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        /* Blinking Cursor Animation */
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            25% {
+                border-color: #00ff00;
+            }
+        }
