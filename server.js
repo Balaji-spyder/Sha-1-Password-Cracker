@@ -8,7 +8,7 @@ const port = 5000;
 // Middleware to parse JSON and enable CORS
 app.use(express.json());
 app.use(cors({
-    origin: 'https://Balaji-spyder.github.io', // Replace with your GitHub Pages URL
+    origin: 'https://Balaji-spyder.github.io',
 }));
 
 // Validation function for SHA-1 hash
