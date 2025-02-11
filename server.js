@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(cors({
     origin: 'https://Balaji-spyder.github.io',
 }));
+app.options('*', cors());
 
 // Validation function for SHA-1 hash
 function isValidSHA1(hash) {
