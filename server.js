@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 // Middleware to parse JSON and enable CORS
 app.use(express.json());
 app.use(cors({
-    origin: 'https://Balaji-spyder.github.io',
+    origin: 'https://balaji-spyder.github.io',
 }));
 app.options('*', cors());
 
