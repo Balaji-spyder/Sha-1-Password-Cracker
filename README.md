@@ -37,8 +37,7 @@ A web-based hacking-themed console that allows users to crack SHA-1 hashes using
 You can try out the live version of the application here:
 
 - **Frontend**: [https://balaji-spyder.github.io](https://balaji-spyder.github.io)
-- **Backend**: [https://balaji-spyder-github-io.onrender.com](https://balaji-spyder-github-io.onrender.com)
-
+  
 ---
 
 ## Technologies Used
@@ -65,8 +64,8 @@ You can try out the live version of the application here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<username>/<repository>.git
-   cd <repository>
+   git clone https://github.com/Balaji-spyder/Balaji-spyder.github.io.git
+   cd Balaji-spyder.github.io
    ```
 2. Open the `index.html` file in your browser:
    ```bash
@@ -77,8 +76,8 @@ You can try out the live version of the application here:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<username>/<repository>.git
-   cd <repository>
+   git clone https://github.com/Balaji-spyder/Balaji-spyder.github.io.git
+   cd Balaji-spyder.github.io
    ```
 2. Install dependencies:
    ```bash
