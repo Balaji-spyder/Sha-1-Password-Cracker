@@ -36,7 +36,7 @@ function isValidSHA1(hash) {
                 }
 
                 const data = await response.json();
-                resultDiv.textContent = `Result: ${data.result}`;
+                resultDiv.textContent = `Password: ${data.result}`;
             } catch (error) {
                 resultDiv.textContent = `Error: ${error.message}`;
             } finally {
