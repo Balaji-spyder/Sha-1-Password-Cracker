@@ -12,7 +12,7 @@ A web-based hacking-themed console that allows users to crack SHA-1 hashes using
 
 You can try out the live version of the application here:
 
-- **Frontend**: [https://balaji-spyder.github.io](https://balaji-spyder.github.io)
+- **Frontend**: [https://balaji-spyder.github.io/Sha-1-Password-Cracker/](https://balaji-spyder.github.io/Sha-1-Password-Cracker/)
   
 ---
 
