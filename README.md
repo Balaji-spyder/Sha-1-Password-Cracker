@@ -8,6 +8,14 @@ A web-based hacking-themed console that allows users to crack SHA-1 hashes using
 
 ---
 
+## Demo
+
+You can try out the live version of the application here:
+
+- **Frontend**: [https://balaji-spyder.github.io](https://balaji-spyder.github.io)
+  
+---
+
 ## Table of Contents
 
 1. [Features](#features)
@@ -30,14 +38,6 @@ A web-based hacking-themed console that allows users to crack SHA-1 hashes using
 - **Responsive Design**: Works seamlessly on different screen sizes.
 - **CORS Handling**: Properly configured for cross-origin requests.
 
----
-
-## Demo
-
-You can try out the live version of the application here:
-
-- **Frontend**: [https://balaji-spyder.github.io](https://balaji-spyder.github.io)
-  
 ---
 
 ## Technologies Used
