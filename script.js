@@ -45,7 +45,7 @@ function isValidSHA1(hash) {
             }
         });
         // Typing Effect
-        const textToType = ">_ Created By BALAJI C K";
+        const textToType = ">_ created by BALAJI C K";
         const typingSpan = document.getElementById('typing-effect');
         let index = 0;
 
