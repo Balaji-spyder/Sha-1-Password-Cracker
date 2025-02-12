@@ -20,7 +20,7 @@ function isValidSHA1(hash) {
             alert(`This hash has already been cracked. Password: ${existingEntry.result}`);
             return;}
 
-            // Show loader
+            // show loader
             const loader = document.getElementById('loader');
             const resultDiv = document.getElementById('result');
             loader.style.display = 'block';
@@ -47,7 +47,7 @@ function isValidSHA1(hash) {
                 addHashToTable(hash, useSalts, data.result);
             if (!isTableVisible) {
             showTable();
-                    }
+            }
             } catch (error) {
                 resultDiv.textContent = `Error: ${error.message}`;
             } finally {
@@ -99,7 +99,7 @@ function showTable() {
     isTableVisible = true;
     setTimeout(() => {
         tableContainer.classList.add('visible');
-    }, 20); 
+    }, 10); 
 }
     // Start the typing effect when the page loads
     window.onload = typeWriter;
