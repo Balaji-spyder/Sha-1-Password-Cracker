@@ -1,10 +1,10 @@
 let hashHistory = [];
+let isTableVisible = false; // Track whether the table is visible
 // Validation function for SHA-1 hash
 function isValidSHA1(hash) {
             const sha1Regex = /^[a-fA-F0-9]{40}$/; // Regex for 40-character hexadecimal string
             return sha1Regex.test(hash);
         }
-
         document.getElementById('executeButton').addEventListener('click', async () => {
             const hash = document.getElementById('hashInput').value.trim();
             const useSalts = document.getElementById('saltDropdown').value === 'true';
@@ -45,6 +45,9 @@ function isValidSHA1(hash) {
                 resultDiv.textContent = `Password: ${data.result}`;
              // Add entry to the table
                 addHashToTable(hash, useSalts, data.result);
+            if (!isTableVisible) {
+            showTable();
+                    }
             } catch (error) {
                 resultDiv.textContent = `Error: ${error.message}`;
             } finally {
@@ -90,6 +93,13 @@ function isValidSHA1(hash) {
     tableBody.appendChild(row);
     hashHistory.push({ hash, useSalts, result });
 }
-
+function showTable() {
+    const tableContainer = document.getElementById('tableContainer');
+    tableContainer.style.display = 'block'; // Make the table visible
+    isTableVisible = true;
+    setTimeout(() => {
+        tableContainer.classList.add('visible');
+    }, 20); 
+}
     // Start the typing effect when the page loads
     window.onload = typeWriter;
