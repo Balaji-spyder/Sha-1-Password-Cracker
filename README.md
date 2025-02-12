@@ -8,18 +8,10 @@ A web-based hacking-themed console that allows users to crack SHA-1 hashes using
 
 ---
 
-## Demo
-
-You can try out the live version of the application here:
-
-- **Frontend**: [https://balaji-spyder.github.io/Sha-1-Password-Cracker/](https://balaji-spyder.github.io/Sha-1-Password-Cracker/)
-  
----
-
 ## Table of Contents
 
-1. [Features](#features)
-2. [Demo](#demo)
+1. [Demo](#demo)
+2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Setup Instructions](#setup-instructions)
    - [Frontend](#frontend)
@@ -27,6 +19,14 @@ You can try out the live version of the application here:
 5. [How It Works](#how-it-works)
 6. [API Endpoints](#api-endpoints)
    
+---
+
+## Demo
+
+You can try out the live version of the application here:
+
+- **Frontend**: [https://balaji-spyder.github.io/Sha-1-Password-Cracker/](https://balaji-spyder.github.io/Sha-1-Password-Cracker/)
+
 ---
 
 ## Features
