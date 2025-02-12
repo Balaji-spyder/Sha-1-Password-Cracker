@@ -101,5 +101,10 @@ function showTable() {
         tableContainer.classList.add('visible');
     }, 10); 
 }
+document.getElementById('clearHistoryButton').addEventListener('click', () => {
+    const tableBody = document.querySelector('#hashTable tbody');
+    tableBody.innerHTML = ''; // Clear table rows
+    hashHistory = []; // Clear history array
+});
     // Start the typing effect when the page loads
     window.onload = typeWriter;
