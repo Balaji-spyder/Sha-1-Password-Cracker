@@ -1,4 +1,5 @@
- // Validation function for SHA-1 hash
+let hashHistory = [];
+// Validation function for SHA-1 hash
 function isValidSHA1(hash) {
             const sha1Regex = /^[a-fA-F0-9]{40}$/; // Regex for 40-character hexadecimal string
             return sha1Regex.test(hash);
@@ -13,6 +14,11 @@ function isValidSHA1(hash) {
                 alert('Please enter a valid SHA-1 hash.');
                 return;
             }
+            
+            const existingEntry = hashHistory.find(entry => entry.hash === hash && entry.useSalts === useSalts);
+            if (existingEntry) {
+            alert(`This hash has already been cracked. Password: ${existingEntry.result}`);
+            return;}
 
             // Show loader
             const loader = document.getElementById('loader');
@@ -37,6 +43,8 @@ function isValidSHA1(hash) {
 
                 const data = await response.json();
                 resultDiv.textContent = `Password: ${data.result}`;
+             // Add entry to the table
+                addHashToTable(hash, useSalts, data.result);
             } catch (error) {
                 resultDiv.textContent = `Error: ${error.message}`;
             } finally {
@@ -56,6 +64,32 @@ function isValidSHA1(hash) {
                 setTimeout(typeWriter, 100); // Adjust typing speed (milliseconds)
             }
         }
+         // Function to add a hash to the table
+    function addHashToTable(hash, useSalts, result) {
+    const tableBody = document.querySelector('#hashTable tbody');
 
-        // Start the typing effect when the page loads
-        window.onload = typeWriter;
+    // Create a new row
+    const row = document.createElement('tr');
+
+    // Add hash cell
+    const hashCell = document.createElement('td');
+    hashCell.textContent = hash; 
+    row.appendChild(hashCell);
+
+    // Add salt cell
+    const saltCell = document.createElement('td');
+    saltCell.textContent = useSalts ? 'Yes' : 'No'; 
+    row.appendChild(saltCell);
+
+    // Add result cell
+    const resultCell = document.createElement('td');
+    resultCell.textContent = result; 
+    row.appendChild(resultCell);
+
+    // Append row to the table
+    tableBody.appendChild(row);
+    hashHistory.push({ hash, useSalts, result });
+}
+
+    // Start the typing effect when the page loads
+    window.onload = typeWriter;
