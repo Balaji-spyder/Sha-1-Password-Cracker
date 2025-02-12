@@ -93,3 +93,24 @@
                 border-color: #00ff00;
             }
         }
+          /* Table Styling */
+.table {
+    border: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+.table th,
+.table td {
+    border: 1px solid #00ff00;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.table-responsive {
+    max-height: 300px; /* Optional: Limit height for long tables */
+    overflow-y: auto;
+}
