@@ -108,3 +108,27 @@ document.getElementById('clearHistoryButton').addEventListener('click', () => {
 });
     // Start the typing effect when the page loads
     window.onload = typeWriter;
+
+// Show the instructions modal on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Display the modal
+    if (modal) {
+        modal.style.display = 'block';
+    }
+
+    // Close the modal when the close button is clicked
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+
+    // Close the modal if the user clicks outside the modal content
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
