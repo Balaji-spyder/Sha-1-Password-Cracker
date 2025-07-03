@@ -112,7 +112,7 @@ document.getElementById('clearHistoryButton').addEventListener('click', () => {
 // Show the instructions modal on page load
 document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-btn');
-
+    const modal = document.getElementById('instructionsModal');
     // Display the modal
     if (modal) {
         modal.style.display = 'block';
