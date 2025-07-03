@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Instructions Modal -->
+<div id="instructionsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>How to Use the Application</h2>
+        <p>GitHub link: <a href="https://github.com/Balaji-spyder/Sha-1-Password-Cracker" target="_blank">https://github.com/Balaji-spyder/Sha-1-Password-Cracker</a></p>
+        <p>Welcome to the <strong>SHA-1 Password Cracker Console</strong>! This tool helps you crack SHA-1 hashes and recover passwords. Don’t worry if you’re new to this—it’s easy to use! Just follow these steps:</p>
+        <ol>
+            <li><strong>Enter a Hash</strong>: Type or paste a valid <strong>SHA-1 hash</strong> into the input box.  
+                (A hash is a scrambled version of a password, usually a 40-character string like <code>5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8</code>.)</li>
+            <li><strong>Select Salt Option</strong>: If the hash uses a <strong>salt</strong> (extra data added to the password), choose <strong>Yes</strong> from the dropdown menu.  
+                - Not sure? Leave it as <strong>No</strong>—most hashes don’t use salts.</li>
+            <li><strong>Click "Execute"</strong>: Once you’ve entered the hash and selected the salt option, click the <strong>Execute</strong> button.  
+                - The system will process the hash and attempt to crack it.</li>
+            <li><strong>View the Result</strong>: If the hash is cracked successfully, the original password will appear below the button.  
+                - You can also view all cracked passwords in the table below, along with a <strong>Copy</strong> button to easily copy the result.</li>
+            <li><strong>Try Sample Hashes</strong>: If you’re just testing the tool, use sample hashes from the <code>tests.txt</code> file in the GitHub repository. These are pre-made hashes to help you get started.</li>
+        </ol>
+        <p>That’s it—you’re ready to go! Feel free to experiment and explore.</p>
+    </div>
+</div>
     <!-- Main Container -->
     <div class="container text-center">
         <h1>SHA-1 Password Cracker</h1>
